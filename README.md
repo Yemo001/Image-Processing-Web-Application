@@ -1,102 +1,112 @@
-#Image Processing Web Application
-👤 Author
+# 📸 Image Processing Web Application
 
-Ye Myat Oo
+## 👤 Author  
+**Ye Myat Oo**
 
-📘 Overview
+---
 
-Image Processing Web Application is a browser-based interactive tool built with JavaScript, p5.js, and objectdetect.js.
-It uses your webcam to perform real-time image processing and face detection, featuring multiple filters, color space conversions, and RGB channel segmentation.
+## 📘 Overview
 
-This project demonstrates practical skills in:
+The **Image Processing Web Application** is a browser-based interactive tool built using **JavaScript**, **p5.js**, and **objectdetect.js**.  
+It uses your **webcam** to perform real-time image processing, color transformations, face detection, and fun overlay effects.
 
-Computer vision
+This project demonstrates practical experience in:
 
-Color space transformation
+- Computer vision  
+- Image processing  
+- Color space transformations  
+- Real-time interactivity  
+- Front-end development with JavaScript  
 
-Image segmentation
+Originally created as an academic coursework project, this version is refined for portfolio and professional use.
 
-Face detection
+---
 
-Real-time UI interaction
+## ✨ Features
 
-Front-end JavaScript development
+### 🖼 Webcam Capture & Image Processing
+- Live webcam preview  
+- One-click snapshot capture  
+- Automatic grayscale conversion + brightness enhancement  
+- Separate **Red**, **Green**, **Blue** channel extraction  
 
-It was originally developed as part of an academic coursework project and has been upgraded and refactored for portfolio use.
+### 🎚 Thresholding (Segmentation)
+- Adjustable sliders for R/G/B thresholding  
+- Per-channel thresholded outputs  
+- Thresholding applied to:
+  - RGB channels  
+  - HSV converted image  
+  - YCbCr converted image  
 
-✨ Features
-🖼 Webcam Capture & Processing
+### 🎨 Color Space Conversions
+- **HSV (Hue, Saturation, Value)**  
+- **YCbCr (Luma, Blue-diff, Red-diff)**  
+- Real-time preview and threshold control  
 
-Live webcam feed
+### 🤖 Face Detection
+- Live face detection using `objectdetect.js`  
+- Face region tracking box  
+- Multiple face-region filters:
+  - Grayscale  
+  - Blur  
+  - Pixelation  
+  - HSV filter  
+  - YCbCr filter  
+  - None (original)  
 
-Capture snapshot with a single click
+### 😺 Overlay Accessories
+Based on detected face position:
 
-Automatic grayscale + brightness adjustment
+- **Catty Ears overlay**
+- **Maple Leaf overlay**
+- Dropdown to switch accessories live  
 
-Extract Red, Green, and Blue channels independently
+---
 
-🎚 Thresholding (Segmentation)
+## 🛠 Technologies Used
 
-Per-channel threshold sliders (R, G, B)
+- **JavaScript (ES6)**  
+- **p5.js** – rendering & webcam capture  
+- **p5.sound.js** – compatibility  
+- **objectdetect.js** – Frontal face detection  
+- **HTML5 Canvas**  
+- **CSS3**  
 
-Adjustable threshold images for segmentation
+---
 
-Thresholding applied to:
+Image-Processing-Web-Application/
+│
+├── index.html
+├── sketch.js
+├── style.css
+├── README.md
+│
+├── libraries/
+│ ├── p5.min.js
+│ ├── p5.sound.min.js
+│ ├── objectdetect.js
+│ └── objectdetect.frontalface.js
+│
+└── assets/
+├── catty.png
+└── maple_leaf.png
 
-RGB channels
+---
 
-HSV converted image
+## 🚀 How to Run Locally
 
-YCbCr converted image
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Yemo001/Image-Processing-Web-Application.git
+cd Image-Processing-Web-Application
+Serve using a local server
 
-🎨 Color Space Conversions
+Directly opening index.html will NOT work due to webcam HTTPS requirements.
 
-HSV (Hue, Saturation, Value)
+VS Code Live Server (Recommended)
 
-YCbCr (Luma, Blue-diff, Red-diff)
+Install the Live Server extension
 
-Live preview + threshold slider per color space
+Right-click index.html → Open with Live Server
+## 📁 Folder Structure
 
-🤖 Face Detection
-
-Real-time face detection using objectdetect.js
-
-Bounding box tracking
-
-Task 13 Facial region processing:
-
-Grayscale
-
-Blur
-
-Pixelate
-
-HSV filter
-
-YCbCr filter
-
-“None” (original)
-
-😺 Fun Face Accessories
-
-Based on a detected face:
-
-Catty ears overlay
-
-Maple leaf overlay
-
-Dropdown menu to switch accessories
-
-🛠 Technologies Used
-
-JavaScript (ES6)
-
-p5.js — rendering, webcam capture, filters
-
-p5.sound.js — included for compatibility
-
-objectdetect.js — frontal face detection
-
-HTML5 Canvas
-
-CSS3
