@@ -93,12 +93,16 @@ Image-Processing-Web-Application/
 
 ---
 
+```md
 ## 🚀 How to Run Locally
 
 ### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/Yemo001/Image-Processing-Web-Application.git
 cd Image-Processing-Web-Application
+
+
+
 Serve using a local server
 
 Directly opening index.html will NOT work due to webcam HTTPS requirements.
@@ -109,4 +113,8 @@ Install the Live Server extension
 
 Right-click index.html → Open with Live Server
 ## 📁 Folder Structure
+
+Allow WebCam Permission
+
+Your browser will request access — click Allow.
 
